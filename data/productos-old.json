@@ -1,0 +1,191 @@
+[
+  {
+    "id": 35,
+    "name": "Set of Gardening Gloves with Claws",
+    "price": 15.99,
+    "description": "Multi-functional gloves for planting and digging without tools.",
+    "disponible": false,
+    "category": "Garden",
+    "brand": "Box, Inc."
+  },
+  {
+    "id": 38,
+    "name": "Organic Vanilla Bean Ice Cream",
+    "price": 5.99,
+    "description": "Creamy ice cream made with real vanilla beans, perfect for desserts.",
+    "disponible": false,
+    "category": "Food - Frozen Desserts",
+    "brand": "Kate Spade & Company"
+  },
+  {
+    "id": 65,
+    "name": "Arcade Game Machine",
+    "price": 299.99,
+    "description": "Retro arcade machine for classic gaming.",
+    "disponible": false,
+    "category": "Gaming",
+    "brand": "DAQO New Energy Corp."
+  },
+  {
+    "id": 28,
+    "name": "Buffalo Cauliflower Bites",
+    "price": 6.29,
+    "description": "Spicy cauliflower bites for a vegetarian snack.",
+    "disponible": false,
+    "category": "Food - Freezer",
+    "brand": "Apptio, Inc."
+  },
+  {
+    "id": 80,
+    "name": "Kids Tablet",
+    "price": 129.99,
+    "description": "Durable tablet designed for kids with parental controls.",
+    "disponible": false,
+    "category": "Electronics",
+    "brand": "Tortoise Pipeline & Energy Fund, Inc."
+  },
+  {
+    "id": 84,
+    "name": "Robot Vacuum Cleaner",
+    "price": 299.99,
+    "description": "Smart robotic vacuum for automatic cleaning.",
+    "disponible": false,
+    "category": "Home Appliances",
+    "brand": "Haverty Furniture Companies, Inc."
+  },
+  {
+    "id": 35,
+    "name": "Chocolate Hazelnut Granola",
+    "price": 4.49,
+    "description": "Crunchy granola with chocolate and hazelnuts for breakfast.",
+    "disponible": false,
+    "category": "Food - Cereal",
+    "brand": "Federal Agricultural Mortgage Corporation"
+  },
+  {
+    "id": 29,
+    "name": "Breathable Face Mask Set",
+    "price": 14.99,
+    "description": "Comfortable and reusable face masks in different styles.",
+    "disponible": false,
+    "category": "Health",
+    "brand": "Twenty-First Century Fox, Inc."
+  },
+  {
+    "id": 100,
+    "name": "Peanut Butter Granola",
+    "price": 4.99,
+    "description": "Crunchy granola full of peanut butter flavor and oats.",
+    "disponible": true,
+    "category": "Food - Breakfast",
+    "brand": "Western Asset Municipal Partners Fund, Inc."
+  },
+  {
+    "id": 67,
+    "name": "Stylish Combat Boots",
+    "price": 99.99,
+    "description": "Bold combat boots that make a statement with any outfit.",
+    "disponible": false,
+    "category": "Clothing - Shoes",
+    "brand": "Mammoth Energy Services, Inc."
+  },
+  {
+    "id": 28,
+    "name": "Vegan Chocolate Cake Mix",
+    "price": 4.29,
+    "description": "Plant-based mix for a rich chocolate cake.",
+    "disponible": false,
+    "category": "Food - Baking",
+    "brand": "Naked Brand Group Inc."
+  },
+  {
+    "id": 35,
+    "name": "Smartphone Gimbal Stabilizer",
+    "price": 89.99,
+    "description": "Stabilizer for smooth video recording with smartphones.",
+    "disponible": false,
+    "category": "Photography",
+    "brand": "SeaChange International, Inc."
+  },
+  {
+    "id": 4,
+    "name": "Creamy Ranch Dressing",
+    "price": 2.49,
+    "description": "Classic ranch dressing for salads and dipping.",
+    "disponible": true,
+    "category": "Food - Dressings",
+    "brand": "Benitec Biopharma Limited"
+  },
+  {
+    "id": 14,
+    "name": "Dish Soap Dispenser",
+    "price": 18.99,
+    "description": "Stylish dish soap dispenser with sponge holder.",
+    "disponible": true,
+    "category": "Kitchen",
+    "brand": "Gerdau S.A."
+  },
+  {
+    "id": 94,
+    "name": "Buffalo Sauce",
+    "price": 2.99,
+    "description": "Spicy buffalo sauce ideal for wings or dipping.",
+    "disponible": false,
+    "category": "Food - Condiments",
+    "brand": "Barclays Inverse US Treasury Composite ETN"
+  },
+  {
+    "id": 41,
+    "name": "Wireless Game Controller",
+    "price": 39.99,
+    "description": "Ergonomic wireless controller for gaming consoles.",
+    "disponible": false,
+    "category": "Gaming",
+    "brand": "KraneShares CSI China Internet ETF"
+  },
+  {
+    "id": 10,
+    "name": "Cotton Sweatpants",
+    "price": 29.99,
+    "description": "Soft and breathable cotton sweatpants perfect for lounging or workouts.",
+    "disponible": false,
+    "category": "Clothing - Bottoms",
+    "brand": "Nuveen Global High Income Fund"
+  },
+  {
+    "id": 93,
+    "name": "Adjustable Yoga Mat Strap",
+    "price": 14.99,
+    "description": "Convenient strap for carrying yoga mats to class.",
+    "disponible": false,
+    "category": "Fitness",
+    "brand": "Hess Corporation"
+  },
+  {
+    "id": 11,
+    "name": "Peach Mango Smoothie",
+    "price": 3.49,
+    "description": "A refreshing blend of peaches and mangoes for a delicious smoothie.",
+    "disponible": false,
+    "category": "Food - Beverages",
+    "brand": "Scudder Municiple Income Trust"
+  },
+  {
+    "id": 1756861998031,
+    "name": "Mouse",
+    "price": 30,
+    "description": "Mouse ergonómico",
+    "disponible": true,
+    "category": "Tecnología",
+    "brand": "Logitech"
+  },
+  {
+    "id": 1757466035527,
+    "name": "Vela Iris",
+    "price": 50,
+    "description": "ddd",
+    "disponible": true,
+    "category": "Outdoor",
+    "brand": "Illinois Tool Works Inc."
+  }
+]

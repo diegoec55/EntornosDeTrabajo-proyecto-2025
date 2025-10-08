@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+    <h1 class="user-title">Nuestros usuarios</h1>
+    <a href="/usuarios/nuevo">Agregar usuario</a>
+    <div class="cardAllUsers">
+        <% usuarios.forEach(usuario=> { %>
+            <% if(usuario.disponible) { %>
+            <div class="cardUser">
+                <a href="/usuarios/perfil/<%=usuario.id%>">
+                    <h3> <%=usuario.first_name%> <%=usuario.last_name%> </h3>
+                </a>
+                    <div>
+                        <p><%=usuario.email%></p>
+                    </div>
+            </div>
+            <% } %>
+            <%})%>
+    </div>
+<%- include('partials/footer.ejs') %>

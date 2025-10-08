@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+
+<a href="/velas/nuevo">Agregar producto</a>
+
+<section id="velas">
+  <div class="contVelas">
+    <% productos.forEach(producto=> { %>
+      <% if(producto.disponible === "on") { %>
+      <a href="/velas/detalle/<%=producto.id%>">
+        <div class="velacard" id="vela<%=producto.id%>">
+          <img src="<%=producto.image%>" alt="Vela <%=producto.id%>" />
+          <img class="hover-image" src="<%=producto.hover%>" alt="Vela <%=producto.id%> Hover" />
+          <p><%=producto.name%></p>
+          <h3>$ <%=producto.price%></h3>
+          <!-- <button onclick="agregarAlCarrito('Vela, 5900)">Agregar al carrito</button> -->
+        </div>
+      </a>
+      <% } %>
+    <%})%>
+  </div>
+</section>
+
+<%- include('partials/footer.ejs') %>

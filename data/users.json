@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "first_name": "Maria",
+    "last_name": "Gomez",
+    "email": "maria@outlook.com",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "first_name": "Gabriela",
+    "last_name": "Martinez",
+    "email": "gabriela@gmail.com",
+    "disponible": "on"
+  },
+  {
+    "id": 3,
+    "first_name": "Juan",
+    "last_name": "Gonzalez",
+    "email": "juan@gmail.com",
+    "disponible": "on"
+  },
+  {
+    "id": 1759883770784,
+    "first_name": "Diego",
+    "last_name": "Martinez",
+    "email": "maria@outlook.com",
+    "disponible": "on"
+  }
+]

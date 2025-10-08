@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "BOMBÉ",
+    "price": 8000,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas01.jpg",
+    "hover": "images/velas01-hover.jpg",
+    "stock": 8000,
+    "disponible": "on"
+  },
+  {
+    "id": 2,
+    "name": "LOLA",
+    "price": 8000,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas02.jpg",
+    "hover": "images/velas02-hover.jpg",
+    "stock": 5,
+    "disponible": "on"
+  },
+  {
+    "id": 3,
+    "name": "IRIS",
+    "price": 7200,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas07.jpg",
+    "hover": "images/velas07-hover.jpg",
+    "stock": 5,
+    "disponible": "on"
+  },
+  {
+    "id": 4,
+    "name": "OLIVIA",
+    "price": 12000,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas08.jpg",
+    "hover": "images/velas08-hover.jpg",
+    "stock": 5,
+    "disponible": "on"
+  },
+  {
+    "id": 5,
+    "name": "GRECIA",
+    "price": 8000,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas09.jpg",
+    "hover": "images/velas09-hover.jpg",
+    "stock": 5,
+    "disponible": "on"
+  },
+  {
+    "id": 6,
+    "name": "MADERA",
+    "price": 7000,
+    "description": "aca va la description",
+    "category": "Garden",
+    "image": "images/velas03.jpg",
+    "hover": "images/velas03-hover.jpg",
+    "stock": 5,
+    "disponible": "on"
+  },
+  {
+    "id": 1759873712470,
+    "name": "PRUEBA",
+    "price": 5000,
+    "description": "DESCRIPCION DE PRUEBA",
+    "category": "Garden",
+    "stock": 5000,
+    "disponible": false
+  }
+]

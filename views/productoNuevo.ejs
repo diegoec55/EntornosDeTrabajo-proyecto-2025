@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs') %>
+    <h2>Nueva vela</h2>
+    <form class="formNew" action="/velas/nuevo" method="post">
+        <label for="name">Nombre:</label>
+        <input id="name" name="name" type="text">
+
+        <label for="price">Precio:</label>
+        <input id="price" name="price" type="text">
+
+        <label for="description">Descripción:</label>
+        <input id="description" name="description" type="text">
+
+        <label for="disponible">Disponible:</label>
+        <input type="checkbox" id="disponible" name="disponible">
+
+        <label for="category">Categoría:</label>
+        <input id="category" name="category" type="text">
+
+        <label for="stock">Stock: </label>
+        <input id="stock" name="stock" type="number">
+
+        <button type="submit">Enviar</button>
+    </form>
+<%- include('partials/footer.ejs') %>

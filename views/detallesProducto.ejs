@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+<h2><%= producto.name %></h2>
+<p>Precio: $<%= producto.price %></p>
+<p><%= producto.description %></p>
+<p>Categoría: <%= producto.category %></p>
+
+<a href="/velas/editar/<%= producto.id %>">Editar</a>
+
+<form action="/velas/<%= producto.id %>?_method=DELETE" method="post">
+    <button  onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?');">Eliminar</button>
+</form>
+
+<a href="/velas">Volver</a>
+
+<%- include('partials/footer.ejs') %>
