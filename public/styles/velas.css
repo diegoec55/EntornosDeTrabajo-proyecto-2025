@@ -80,6 +80,19 @@ header {
     padding: 8px;
 }
 
+.product-all {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.product-all a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+}
+
 @media (max-width: 767px) {
     .contVelas {
         display: flex;

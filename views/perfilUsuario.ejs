@@ -1,14 +1,16 @@
 <%- include('partials/header.ejs') %>
-<h2>Nombre: <%= usuario.first_name %></h2>
-<h2>Apellido: <%= usuario.last_name %></h2>
-<p>Email: <%= usuario.email %></p>
-
-<a href="/usuarios/editar/<%= usuario.id %>">Editar</a>
-
-<form action="/usuarios/<%= usuario.id %>?_method=DELETE" method="post">
-    <button  onclick="return confirm('¿Estás seguro de que quieres eliminar este usuario?');">Eliminar</button>
-</form>
-
-<a href="/usuarios">Volver</a>
+<div class="user-perfil">
+    <h2>Nombre:  <%= usuario.first_name %></h2>
+    <h2>Apellido:  <%= usuario.last_name %></h2>
+    <h3>Email: <%= usuario.email %></h3>
+    
+    <a href="/usuarios/editar/<%= usuario.id %>">Editar</a>
+    
+    <form action="/usuarios/<%= usuario.id %>?_method=DELETE" method="post">
+        <button  onclick="return confirm('¿Estás seguro de que quieres eliminar este usuario?');">Eliminar</button>
+    </form>
+    
+    <a href="/usuarios">Volver</a>
+</div>
 
 <%- include('partials/footer.ejs') %>
