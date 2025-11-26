@@ -1,24 +1,47 @@
 <%- include('partials/header.ejs') %>
-    <h2>Nueva vela</h2>
-    <form class="formNew" action="/velas/<%= producto.id %>?_method=PUT" method="post">
-        <label for="name">Nombre:</label>
-        <input id="name" name="name" type="text" value="<%= producto.name %>">
 
-        <label for="price">Precio:</label>
-        <input id="price" name="price" type="text" value="<%= producto.price %>">
+<div class="edit-product py-10 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-6" style="font-family: 'tan-mon-cheri';">Editar Vela</h2>
+    <form class="formEdit space-y-6 max-w-lg mx-auto p-6 rounded-lg shadow-lg" style="background-color: #e7e4e1;" action="/velas/<%= producto.id %>?_method=PUT" method="post">
+        <div class="space-y-4">
 
-        <label for="description">Descripción:</label>
-        <input id="description" name="description" type="text" value="<%= producto.description %>">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Nombre:</label>
+                <input id="name" name="name" type="text" value="<%= producto.name %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500">
+            </div>
 
-        <label for="disponible">Disponible:</label>
-        <input type="checkbox" id="disponible" name="disponible" value="<%= producto.disponible %>">
-        
-        <label for="category">Categoría:</label>
-        <input id="category" name="category" type="text" value="<%= producto.category %>">
+            <div>
+                <label for="price" class="block text-sm font-medium text-gray-700">Precio:</label>
+                <input id="price" name="price" type="text" value="<%= producto.price %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500">
+            </div>
 
-        <label for="stock">Stock: </label>
-        <input id="stock" name="stock" type="number" value="<%= producto.stock %>">
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700">Descripción:</label>
+                <input id="description" name="description" type="text" value="<%= producto.description %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500">
+            </div>
 
-        <button type="submit">Enviar</button>
+            <div class="flex items-center space-x-2">
+                <input type="checkbox" id="disponible" name="disponible" value="on" {{producto.disponible === "on" ? "checked" : ""}} class="h-5 w-5 text-gray-600 focus:ring-gray-500 border-gray-300 rounded" <%= producto.disponible ? 'checked' : '' %>>
+                <label for="disponible" class="text-sm text-gray-700">Disponible</label>
+            </div>
+            
+            <div>
+                <label for="category" class="block text-sm font-medium text-gray-700">Categoría:</label>
+                <input id="category" name="category" type="text" value="<%= producto.category %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500">
+            </div>
+
+            <div>
+                <label for="stock" class="block text-sm font-medium text-gray-700">Stock: </label>
+                <input id="stock" name="stock" type="number" value="<%= producto.stock %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500">
+            </div>
+
+        </div>
+
+        <div class="flex justify-center">
+            <button type="submit" class="px-6 py-3 mt-6 bg-gray-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Enviar
+            </button>
+        </div>
     </form>
+</div>
 <%- include('partials/footer.ejs') %>

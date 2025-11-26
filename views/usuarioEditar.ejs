@@ -1,20 +1,36 @@
 <%- include('partials/header.ejs') %>
-    <div class="user-edit">
-        <h2>Editar usuario</h2>
-        <form class="formNew" action="/usuarios/<%= usuario.id %>?_method=PUT" method="post">
-            <label for="name">Nombre:</label>
-            <input id="name" name="name" type="text" value="<%= usuario.first_name %>">
+
+<div class="user-edit py-10 px-4 sm:px-6 lg:px-8 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-6" style="font-family: 'tan-mon-cheri';">Editar Usuario</h2>
     
-            <label for="lastname">Apellido:</label>
-            <input id="lastname" name="lastname" type="text" value="<%= usuario.last_name %>">
-    
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="text" value="<%= usuario.email %>">
-    
-            <label for="disponible">Disponible:</label>
-            <input type="checkbox" id="disponible" name="disponible" value="<%= usuario.disponible %>">
-    
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+    <form class="formNew space-y-6" action="/usuarios/<%= usuario.id %>?_method=PUT" method="post">
+
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nombre:</label>
+            <input id="name" name="name" type="text" value="<%= usuario.first_name %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500" required>
+        </div>
+        
+        <div>
+            <label for="lastname" class="block text-sm font-medium text-gray-700">Apellido:</label>
+            <input id="lastname" name="lastname" type="text" value="<%= usuario.last_name %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500" required>
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+            <input id="email" name="email" type="text" value="<%= usuario.email %>" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500" required>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <input type="checkbox" id="disponible" name="disponible" <%= usuario.disponible ? 'checked' : '' %> class="h-5 w-5 text-gray-600 focus:ring-gray-500 border-gray-300 rounded">
+            <label for="disponible" class="text-sm text-gray-700">Disponible</label>
+        </div>
+
+        <div class="flex justify-center">
+            <button type="submit" class="px-6 py-3 mt-6 bg-gray-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                Enviar
+            </button>
+        </div>
+    </form>
+</div>
+
 <%- include('partials/footer.ejs') %>

@@ -21,7 +21,7 @@ module.exports = {
             name: req.body.name,
             price: Number(req.body.price),
             description: req.body.description,
-            disponible: req.body.disponible === "on",
+            disponible: req.body.disponible === "on" ? "on" : "",
             category: req.body.category,
             stock: Number(req.body.price)
         }
@@ -42,7 +42,7 @@ module.exports = {
             name: req.body.name,
             price: Number(req.body.price),
             description: req.body.description,
-            disponible: req.body.disponible === "on",
+            disponible: req.body.disponible === "on" ? "on" : "",
             category: req.body.category,
             stock: Number(req.body.price)
         }

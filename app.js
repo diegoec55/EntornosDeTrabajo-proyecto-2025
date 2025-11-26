@@ -12,8 +12,8 @@ app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-app.listen(3002, () => {
-    console.log(`Servidor corriendo en el puerto http://localhost:3002`);
+app.listen(3001, () => {
+    console.log(`Servidor corriendo en el puerto http://localhost:3001`);
 });
 
 app.use("/", mainRoutes)

@@ -1,51 +1,121 @@
 <%- include('partials/header.ejs') %>
-    <main>
-        <div class="slider-frame"> 
-            <ul>
-                <li><img src="images/slide01.jpg" alt=""></li>
-                <li><img src="images/slide02.jpg" alt=""></li>
-                <li><img src="images/slide03.jpg" alt=""></li>
-                <li><img src="images/slide04.png" alt=""></li>
-            </ul>
+
+    <main class="min-h-screen">
+
+        <div class="w-full relative">
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <p class="text-white text-xl sm:text-3xl font-semibold" style="font-family: 'tan-mon-cheri';">
+                    Combos nuevos, momentos únicos.
+                </p>
+                <p class="text-white text-xs sm:text-base mt-2 max-w-xl">
+                    Descubrí la magia de nuestros nuevos combos y regalate un momento especial.
+                    Dejate tentar, elegí tu combo.
+                </p>
+            </div>
+
+            <img class="w-full" src="images/backblack.jpg" alt="">
         </div>
-        <div class="introvideo"> 
-            <video id="videos" width="400" height="640" autoplay loop muted>
-                <source src="videos/videoportada1.mp4" type="video/mp4">
-            </video>
-            <video id="videos" width="400" height="640" autoplay loop muted>
-                <source src="videos/videoportada2.mp4" type="video/mp4">
-            </video>            
-        </div>
-        <section id="productos">
-            <h2>DESCUBRÍ NUESTROS PRODUCTOS</h2>
-            <div class="contProductos">
-                <!-- <a href="combos.html" class="btn">
-                    <div class="productocard">
-                        <img src="images/Combo01.jpeg" alt="combos">
-                        <h3>Combos</h3>
-                    </div>
-                </a> -->
-                <a href="/velas" class="btn">
-                    <div class="productocard">
-                        <img src="images/Portada1.jpg" alt="velas">
-                        <h3>Productos</h3>
+
+        <section id="productos" class="flex flex-col items-center justify-center">
+
+            <h2 class="text-black text-xl sm:text-3xl text-center mt-5 p-2" style="font-family: 'tan-mon-cheri';">
+                DESCUBRÍ NUESTROS PRODUCTOS
+            </h2>
+
+            <div class="flex flex-wrap items-center justify-center gap-10 mt-4">
+
+                <a href="/velas" class="no-underline">
+                    <div
+                        class="w-[220px] border border-black rounded-lg overflow-hidden text-center transition-transform duration-200 hover:scale-105">
+                        <img src="images/Portada1.jpg" class="w-full rounded-lg" alt="velas">
+                        <h3 class="text-black p-2 m-0 font-semibold">Productos</h3>
                     </div>
                 </a>
-                <a href="infoaromas.html" class="btn">
-                    <div class="productocard">
-                        <img src="images/Esencia01.jpg" alt="esencias">
-                        <h3>Aromas</h3>
+
+                <a href="/infoaromas" class="no-underline">
+                    <div
+                        class="w-[220px] border border-black rounded-lg overflow-hidden text-center transition-transform duration-200 hover:scale-105">
+                        <img src="images/Esencia01.jpg" class="w-full rounded-lg" alt="esencias">
+                        <h3 class="text-black p-2 m-0 font-semibold">Aromas</h3>
                     </div>
                 </a>
+
             </div>
         </section>
-        <section>
-            <div class="phone">
-                <a href="https://wa.me/+5493407445255?text=Hola" target="_blank">
-                    <img src="images/whatsapp.png" alt="whatsapp">
-                </a>
+
+        <section class="relative isolate overflow-hidden px-6 py-10 sm:py-10 lg:px-8 mt-6"
+            style="background-color: #FFE2C4;">
+
+            <div class="w-full relative">
+                <div class="inset-0 flex flex-col items-center justify-center text-center px-4">
+                    <p class="text-black text-xl sm:text-2xl font-semibold">
+                        Testimonios de nuestors clientes.
+                    </p>
+                    <p class="text-black text-xs sm:text-base mt-2 max-w-xl">
+                        Descubre por qué confían en nosotros, testigos de un servicio excepcional..
+                    </p>
+                </div>
+            </div>
+
+
+            <div
+                class="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 mx-auto max-w-2xl lg:max-w-4xl">
+
+                <figure class="mt-2 border border-black rounded-lg p-4 w-full md:w-1/3"
+                    style="background-color: #FFCF9D;">
+                    <blockquote class="text-center text-sm font-semibold text-black sm:text-base">
+                        <p>"Descubrí Ámbar casi por casualidad y fue un antes y un después en mi hogar..."</p>
+                    </blockquote>
+                    <figcaption class="mt-4">
+                        <img src="/images/perfil1.jpg" alt="" class="mx-auto size-10 rounded-full" />
+                        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                            <div class="font-semibold text-black">Mariana G.</div>
+                            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-white">
+                                <circle r="1" cx="1" cy="1" />
+                            </svg>
+                            <div class="text-gray-600 font-bold">Rosario</div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="mt-2 border border-black rounded-lg p-4 w-full md:w-1/3"
+                    style="background-color: #FFCF9D;">
+                    <blockquote class="text-center text-sm font-semibold text-black sm:text-base">
+                        <p>"Cada vela de Ámbar tiene una calidez especial… transformó mis momentos de descanso en pequeños rituales que espero cada día."</p>
+                    </blockquote>
+                    <figcaption class="mt-4">
+                        <img src="/images/perfil2.jpg" alt="" class="mx-auto size-10 rounded-full" />
+                        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                            <div class="font-semibold text-black">Judith B.</div>
+                            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-white">
+                                <circle r="1" cx="1" cy="1" />
+                            </svg>
+                            <div class="text-gray-600 font-bold">Rosario</div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="mt-2 border border-black rounded-lg p-4 w-full md:w-1/3"
+                    style="background-color: #FFCF9D;">
+                    <blockquote class="text-center text-sm font-semibold text-black sm:text-base">
+                        <p>"Desde que probé Ámbar, mi casa no solo huele distinto: se siente distinta. Es increíble cómo un detalle tan simple puede cambiar el ambiente por completo."</p>
+                    </blockquote>
+                    <figcaption class="mt-4">
+                        <img src="/images/perfil3.jpg" alt="" class="mx-auto size-10 rounded-full" />
+                        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                            <div class="font-semibold text-black">Mateo F.</div>
+                            <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-white">
+                                <circle r="1" cx="1" cy="1" />
+                            </svg>
+                            <div class="text-gray-600 font-bold">Rosario</div>
+                        </div>
+                    </figcaption>
+                </figure>
+
             </div>
         </section>
+
     </main>
 
-<%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>

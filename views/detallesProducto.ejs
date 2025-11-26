@@ -1,15 +1,60 @@
 <%- include('partials/header.ejs') %>
-<h2><%= producto.name %></h2>
-<p>Precio: $<%= producto.price %></p>
-<p><%= producto.description %></p>
-<p>Categoría: <%= producto.category %></p>
 
-<a href="/velas/editar/<%= producto.id %>">Editar</a>
+<h2 class="text-2xl sm:text-3xl font-semibold text-center mt-6" style="font-family: 'tan-mon-cheri';"><%=titulo%></h2>
 
-<form action="/velas/<%= producto.id %>?_method=DELETE" method="post">
-    <button  onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?');">Eliminar</button>
-</form>
+<main class="min-h-screen flex flex-col items-center justify-start py-10 px-4" style="background-color: #FFCF9D;">
 
-<a href="/velas">Volver</a>
+    <div class="w-full max-w-2xl rounded-lg p-6" style="background-color: #FFE2C4;">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+        
+            <img src="/<%= producto.image %>" alt="<%= producto.name %>"
+                class="w-full h-full object-cover rounded-lg border border-black">
+        
+            <img src="/<%= producto.hover %>" alt="<%= producto.name %> Hover"
+                class="w-full h-full object-cover rounded-lg border border-black">
+        
+        </div>
+
+        <h2 class="font-tan text-3xl text-center text-black mb-4">
+            <%= producto.name %>
+        </h2>
+
+        <p class="text-lg text-black mb-2">
+            <span class="font-semibold">Precio:</span> $<%= producto.price %>
+        </p>
+
+        <p class="text-black mb-2">
+            <%= producto.description %>
+        </p>
+
+        <p class="text-black mb-6">
+            <span class="font-semibold">Categoría:</span> <%= producto.category %>
+        </p>
+
+        <div class="flex items-center justify-between gap-4">
+
+            <a href="/velas/editar/<%= producto.id %>"
+                class="px-4 py-2 bg-gray-300 text-black font-semibold rounded hover:bg-gray-400 transition">
+                Editar
+            </a>
+
+            <form action="/velas/<%= producto.id %>?_method=DELETE" method="post">
+                <button
+                    class="px-4 py-2 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition"
+                    onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?');">
+                    Eliminar
+                </button>
+            </form>
+
+            <a href="/velas"
+                class="px-4 py-2 bg-gray-300 text-black font-semibold rounded hover:bg-gray-400 transition">
+                Volver
+            </a>
+
+        </div>
+    </div>
+
+</main>
 
 <%- include('partials/footer.ejs') %>

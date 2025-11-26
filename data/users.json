@@ -4,7 +4,7 @@
     "first_name": "Maria",
     "last_name": "Gomez",
     "email": "maria@outlook.com",
-    "disponible": true
+    "disponible": "on"
   },
   {
     "id": 2,
@@ -26,5 +26,19 @@
     "last_name": "Martinez",
     "email": "maria@outlook.com",
     "disponible": "on"
+  },
+  {
+    "id": 1764094280014,
+    "first_name": "Diego",
+    "last_name": "Martinez",
+    "email": "diego@gmail.com",
+    "disponible": ""
+  },
+  {
+    "id": 1764115752754,
+    "first_name": "Diego",
+    "last_name": "Martinez",
+    "email": "diego.comisso@ina.edu.ar",
+    "disponible": ""
   }
 ]

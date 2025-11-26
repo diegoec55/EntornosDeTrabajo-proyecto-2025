@@ -1,28 +1,47 @@
 <%- include('partials/header.ejs') %>
-<div class="new-product">
-    <h2>Nueva vela</h2>
-    <form class="formNew" action="/velas/nuevo" method="post">
-        <label for="name">Nombre:</label>
-        <input id="name" name="name" type="text">
 
-        <label for="price">Precio:</label>
-        <input id="price" name="price" type="text">
+<div class="new-product py-10 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-6" style="font-family: 'tan-mon-cheri';">Nueva Vela</h2>
+    <form class="formNew space-y-6 max-w-lg mx-auto p-6 rounded-lg shadow-lg" style="background-color: #e7e4e1;">
+        <div class="space-y-4">
 
-        <label for="description">Descripción:</label>
-        <input id="description" name="description" type="text">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Nombre:</label>
+                <input id="name" name="name" type="text" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
 
-        <label for="disponible">Disponible:</label>
-        <input type="checkbox" id="disponible" name="disponible">
+            <div>
+                <label for="price" class="block text-sm font-medium text-gray-700">Precio:</label>
+                <input id="price" name="price" type="text" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
 
-        <label for="category">Categoría:</label>
-        <input id="category" name="category" type="text">
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700">Descripción:</label>
+                <input id="description" name="description" type="text" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
 
-        <label for="stock">Stock: </label>
-        <input id="stock" name="stock" type="number">
+            <div class="flex items-center space-x-2">
+                <input type="checkbox" id="disponible" name="disponible" class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                <label for="disponible" class="text-sm text-gray-700">Disponible</label>
+            </div>
 
-        <div class="formButtonProduct">
-            <button type="submit">Enviar</button>
+            <div>
+                <label for="category" class="block text-sm font-medium text-gray-700">Categoría:</label>
+                <input id="category" name="category" type="text" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+
+            <div>
+                <label for="stock" class="block text-sm font-medium text-gray-700">Stock:</label>
+                <input id="stock" name="stock" type="number" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button type="submit" class="px-6 py-3 mt-6 bg-indigo-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                Enviar
+            </button>
         </div>
     </form>
 </div>
+
 <%- include('partials/footer.ejs') %>

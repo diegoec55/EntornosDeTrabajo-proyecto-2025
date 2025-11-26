@@ -23,19 +23,28 @@
 // });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const submenu = document.querySelector(".submenu");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menuToggle = document.querySelector(".menu-toggle");
+//   const submenu = document.querySelector(".submenu");
 
-  menuToggle.addEventListener("click", function (event) {
-      event.preventDefault(); // Evita que el enlace recargue la página
-      submenu.classList.toggle("show"); // Muestra u oculta el submenú
-  });
+//   menuToggle.addEventListener("click", function (event) {
+//       event.preventDefault(); // Evita que el enlace recargue la página
+//       submenu.classList.toggle("show"); // Muestra u oculta el submenú
+//   });
 
-  // Cierra el submenú si se hace clic fuera
-  document.addEventListener("click", function (event) {
-      if (!menuToggle.contains(event.target) && !submenu.contains(event.target)) {
-          submenu.classList.remove("show");
-      }
-  });
+//   // Cierra el submenú si se hace clic fuera
+//   document.addEventListener("click", function (event) {
+//       if (!menuToggle.contains(event.target) && !submenu.contains(event.target)) {
+//           submenu.classList.remove("show");
+//       }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.querySelector("[command='--toggle'][commandfor='mobile-menu']");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
 });

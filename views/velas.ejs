@@ -1,24 +1,52 @@
 <%- include('partials/header.ejs') %>
 
 <div class="product-all">
-  <a href="/velas/nuevo">Agregar producto</a>
+  <a 
+    href="/velas/nuevo"
+    class="text-blue-600 hover:text-blue-800"
+  >
+    Agregar producto
+  </a>
 </div>
 
+<h2 class="text-2xl sm:text-3xl font-semibold text-center mb-6" style="font-family: 'tan-mon-cheri';"><%=titulo%></h2>
+
 <section id="velas">
-  <div class="contVelas">
+  <div class="m-8 contVelas grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 [@media(min-width:1000px)]:grid-cols-4 gap-8 p-4 justify-items-center">
+    
     <% productos.forEach(producto=> { %>
       <% if(producto.disponible === "on") { %>
+
       <a href="/velas/detalle/<%=producto.id%>">
-        <div class="velacard" id="vela<%=producto.id%>">
-          <img src="<%=producto.image%>" alt="Vela <%=producto.id%>" />
-          <img class="hover-image" src="<%=producto.hover%>" alt="Vela <%=producto.id%> Hover" />
-          <p><%=producto.name%></p>
-          <h3>$ <%=producto.price%></h3>
-          <!-- <button onclick="agregarAlCarrito('Vela, 5900)">Agregar al carrito</button> -->
+        <div 
+          class="w-full border border-black rounded-lg overflow-hidden text-center transition-transform duration-200 hover:scale-105"
+          id="vela<%=producto.id%>"
+        >
+          
+          <div class="w-full h-full relative overflow-hidden">
+            <img 
+              src="<%=producto.image%>" 
+              alt="Vela <%=producto.id%>" 
+              class="w-full h-full object-cover"
+            />
+
+            <!-- Hover -->
+            <img 
+              class="hover-image absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 object-cover"
+              src="<%=producto.hover%>"
+              alt="Vela <%=producto.id%> Hover"
+            />
+          </div>
+
+          <p class="mt-3 text-lg font-medium text-gray-800 text-center"><%=producto.name%></p>
+          <h3 class="text-xl font-semibold text-black text-center">$ <%=producto.price%></h3>
+
         </div>
       </a>
+
       <% } %>
-    <%})%>
+    <% }) %>
+
   </div>
 </section>
 
