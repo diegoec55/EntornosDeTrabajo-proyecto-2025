@@ -1,9 +1,9 @@
 <%- include('partials/header.ejs') %>
 
-<div class="user-perfil py-10 px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+<div class="user-perfil py-10 px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto p-6">
     <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-4" style="font-family: 'tan-mon-cheri';">Perfil de Usuario</h2>
 
-    <div class="space-y-4">
+    <div class="flex-col py-10 px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto text-center space-y-4 rounded-lg bg-white">
         <div>
             <h3 class="text-lg font-medium text-gray-700">Nombre:</h3>
             <p class="text-xl font-semibold text-gray-800"><%= usuario.first_name %></p>
@@ -22,7 +22,7 @@
 
     <div class="flex justify-center space-x-4 mt-6">
 
-        <a href="/usuarios/editar/<%= usuario.id %>" class="px-6 py-3 bg-gray-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+        <a href="/usuarios/editar/<%= usuario.id %>" class="px-6 py-3 bg-[#d47734] text-white font-semibold text-lg rounded-lg shadow-md hover:bg-[#A85922] focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
             Editar
         </a>
 
@@ -34,7 +34,7 @@
     </div>
 
     <div class="mt-6 text-center">
-        <a href="/usuarios" class="px-6 py-3 bg-gray-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+        <a href="/usuarios" class="px-6 py-3 bg-[#d47734] text-white font-semibold text-lg rounded-lg shadow-md hover:bg-[#A85922] focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
             Volver
         </a>
     </div>

@@ -57,21 +57,21 @@
   {
     "id": 6,
     "name": "MADERA",
-    "price": 7000,
+    "price": 7500,
     "description": "aca va la description",
     "category": "Garden",
     "image": "images/velas03.jpg",
     "hover": "images/velas03-hover.jpg",
-    "stock": 5,
+    "stock": 7500,
     "disponible": "on"
   },
   {
-    "id": 1759873712470,
-    "name": "PRUEBA",
-    "price": 5000,
-    "description": "DESCRIPCION DE PRUEBA",
+    "id": 1764605002425,
+    "name": "Diego",
+    "price": 80006,
+    "description": "aca va la description",
+    "disponible": "",
     "category": "Garden",
-    "stock": 5000,
-    "disponible": ""
+    "stock": 80006
   }
 ]
