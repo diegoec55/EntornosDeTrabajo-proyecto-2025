@@ -3,16 +3,16 @@ const productModel = require('../models/productModel');
 module.exports = {
     productos: (req, res) => {
         const productos = productModel.leer();
-        res.render("velas", { titulo: "Velas",css:"home.css", productos })
+        res.render("velas", { titulo: "Velas", css: "home.css", productos })
     },
     detalleProductos: (req, res) => {
         let id = req.params.id
         const productos = productModel.leer();
         let producto = productos.find(producto => producto.id == id)
-        res.render("detallesProducto", { titulo: "Detalle de producto",css:"home.css", producto })
+        res.render("detallesProducto", { titulo: "Detalle de producto", css: "home.css", producto })
     },
     formNuevo: (req, res) => {
-        res.render("productoNuevo", { titulo: "Detalle de producto",css:"home.css" })
+        res.render("productoNuevo", { titulo: "Detalle de producto", css: "home.css" })
     },
     crearProducto: (req, res) => {
         const productos = productModel.leer();
@@ -33,7 +33,7 @@ module.exports = {
         const productos = productModel.leer();
         let id = req.params.id
         let producto = productos.find(producto => producto.id == id)
-        res.render("editarProducto", { titulo: "Edicion de productos",css:"home.css", producto })
+        res.render("editarProducto", { titulo: "Edicion de productos", css: "home.css", producto })
     },
     actualizarProducto: (req, res) => {
         let productos = productModel.leer();

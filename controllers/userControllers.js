@@ -21,7 +21,7 @@ module.exports = {
                 first_name: req.body.name,
                 last_name: req.body.lastname,
                 email: req.body.email,
-                disponible: req.body.disponible === "on",
+                disponible: req.body.disponible === "on" ? "on" : "",
             }
             usuarios.push(nuevo)
             usersModel.guardar(usuarios)

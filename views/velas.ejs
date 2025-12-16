@@ -15,7 +15,7 @@
   <div class="m-8 contVelas grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 [@media(min-width:1000px)]:grid-cols-4 gap-8 p-4 justify-items-center">
     
     <% productos.forEach(producto=> { %>
-      <% if(producto.disponible === "on") { %>
+      <% if(producto.disponible) { %>
 
       <a href="/velas/detalle/<%=producto.id%>">
         <div 

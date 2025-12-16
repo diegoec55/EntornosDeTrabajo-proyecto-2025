@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ambar Artesanal</title>
-    <link rel="stylesheet" href="/styles/tailwind.css">
-    <link href="https://fonts.googleapis.com/css?family=Shadows Into Light" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows Into Light"
+      rel="stylesheet"
+    />
     <style>
-        @font-face {
-            font-family: 'tan-mon-cheri';
-            src: url('/fonts/tan-mon-cheri.woff2') format('woff2'),
-                url('/fonts/tan-mon-cheri.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+      @font-face {
+        font-family: "tan-mon-cheri";
+        src: url("/fonts/tan-mon-cheri.woff2") format("woff2"),
+          url("/fonts/tan-mon-cheri.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
     </style>
-</head>
+  </head>
 
-<body style="background-color: #FFCF9D;">
-    <nav style="background-color: #E2BE9F;"
-        class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-9 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <!-- Mobile menu button-->
-                    <button type="button" command="--toggle" commandfor="mobile-menu"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Menu</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                            aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex shrink-0 items-center">
-                        <span class="mt-2 mr-16" style="font-family: 'tan-mon-cheri'; font-weight: bold;">
-                            AMBAR
-                        </span>
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:text-white" -->
-                            <a href="/" aria-current="page"
-                                class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white">Inicio</a>
-                            <a href="/velas"
-                                class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white">Productos</a>
-                            <a href="/infoaromas"
-                                class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white">Aromas</a>
-                            <a href="/usuarios"
-                                class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white">Usuarios</a>
-                        </div>
-                    </div>
-                </div>
+  <body style="background-color: #ffcf9d">
+    <nav
+      style="background-color: #e2be9f"
+      class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+    >
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-9 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              command="--toggle"
+              commandfor="mobile-menu"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Menu</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6 in-aria-expanded:hidden"
+              >
+                <path
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex shrink-0 items-center">
+              <span
+                class="mt-2 mr-16"
+                style="font-family: 'tan-mon-cheri'; font-weight: bold"
+              >
+                AMBAR
+              </span>
             </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:text-white" -->
+                <a
+                  href="/"
+                  aria-current="page"
+                  class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white"
+                  >Inicio</a
+                >
+                <a
+                  href="/velas"
+                  class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white"
+                  >Productos</a
+                >
+                <a
+                  href="/infoaromas"
+                  class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white"
+                  >Aromas</a
+                >
+                <a
+                  href="/usuarios"
+                  class="rounded-md px-3 py-2 text-base font-medium text-black hover:text-white"
+                  >Usuarios</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <el-disclosure id="mobile-menu" hidden class="hidden block sm:hidden">
-            <div class="space-y-1 px-2 pt-2 pb-3">
-                <!-- "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                <a href="/" aria-current="page"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Inicio</a>
-                <a href="/velas"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Productos</a>
-                <a href="/infoaromas"
-                    class="rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Aromas</a>
-                <a href="/usuarios"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white">Usuarios</a>
-            </div>
-        </el-disclosure>
+      <el-disclosure id="mobile-menu" hidden class="hidden block sm:hidden">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <!-- "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+          <a
+            href="/"
+            aria-current="page"
+            class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white"
+            >Inicio</a
+          >
+          <a
+            href="/velas"
+            class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white"
+            >Productos</a
+          >
+          <a
+            href="/infoaromas"
+            class="rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white"
+            >Aromas</a
+          >
+          <a
+            href="/usuarios"
+            class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-white/5 hover:text-white"
+            >Usuarios</a
+          >
+        </div>
+      </el-disclosure>
     </nav>
 
     <!-- Cargar dayjs desde CDN -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script> -->
-        <!-- <script src="/js/day.js"></script> -->
+    <!-- <script src="/js/day.js"></script> -->
+  </body>
+</html>

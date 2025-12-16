@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        "data/*.json",
+        "*.json"
+    ],
+    "watch": [
+        "*.js",
+        "views/**/*.ejs",
+        "routes/**/*.js",
+        "controllers/**/*.js",
+        "models/**/*.js"
+    ]
+}
